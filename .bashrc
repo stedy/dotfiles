@@ -33,18 +33,13 @@ alias sshp='/usr/bin/ssh -o PreferredAuthentications=password'
 #PYTHONPATH = "${PYTHONPATH}:~/usr/lib64/python2.4/site-packages/"
 #export PYTHONPATH
 
-export WHISP_BUILD_DIR=$HOME/whisp-build
 export PYTHONPATH=$HOME/lib/python2.6/site-packages:$HOME/lib64/python2.6/site-packages
 #export PYTHONPATH=/usr/local/lib/python2.7/Bio/__init__.pyc
-export MATSENGRP=/mnt/orca/home/phs_grp/matsengrp/local
-export MATSENWRK=/shared/silo_researcher/Matsen_F/MatsenGrp/working/zstednic/
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64/R/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/lib
-export LD_LIBRARY_PATH=/home/matsengrp/local/lib/:$LD_LIBRARY_PATH
 
 #export PATH=/home/zstednic/Genepop:$PATH
-export PATH=/mnt/orca/home/phs_grp/matsengrp/local/bin:$PATH
 
 r () {
         if [[ -n $TMUX ]]

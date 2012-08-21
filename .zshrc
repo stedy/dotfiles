@@ -29,14 +29,6 @@ plugins=(git autojump zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
  #Customize to your needs...
-export MATSENWRK=/shared/silo_researcher/Matsen_F/MatsenGrp/working/zstednic
-export PATH=/shared/silo_researcher/Matsen_F/MatsenGrp/working/zstednic/mothur/Mothur.source/:/home/zstednic/Genepop/:optional/bin:/mnt/orca/home/phs_grp/matsengrp/local/bin:/shared/silo_researcher/Matsen_F/MatsenGrp/working/zstednic/mothur/Mothur.source/:/home/zstednic/Genepop/:optional/bin:/mnt/orca/home/phs_grp/matsengrp/local/bin:/home/zstednic/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/usr/lib/mit/bin:/home/zstednic/bin:/home/zstednic/bin
+export PATH=optional/bin:/home/zstednic/Genepop/:optional/bin:/home/zstednic/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/usr/lib/mit/bin:/home/zstednic/bin:/home/zstednic/bin
 
-export REFPKG=/shared/silo_researcher/Matsen_F/MatsenGrp/micro_refset/refset/build/targets
-export MATSENGRP=/mnt/orca/home/phs_grp/matsengrp/local/bin
-export LD_LIBRARY_PATH=/mnt/orca/home/phs_grp/matsengrp/local/lib
-
-aptx () {
-    java -jar /home/matsen/src/archaeopteryx/forester_dev.jar -c /home/matsen/src/archaeopteryx/_aptx_configuration_file_dev $@
-}
 
