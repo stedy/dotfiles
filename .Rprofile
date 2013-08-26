@@ -1,7 +1,9 @@
 r <- getOption('repos')
-r["CRAN"] <- "http://cran.us.r-project.org"
+r["CRAN"] <- "http://cran.fhcrc.org"
 options(repos = r)
 rm(r)
 
 options(prompt="R> ", digits = 4, show.signif.stars=FALSE)
 options(stringsAsFactors=FALSE)
+
+`%notin%` <- function(x,y) !(x %in% y)
