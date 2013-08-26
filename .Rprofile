@@ -7,3 +7,7 @@ options(prompt="R> ", digits = 4, show.signif.stars=FALSE)
 options(stringsAsFactors=FALSE)
 
 `%notin%` <- function(x,y) !(x %in% y)
+
+lu <- function(x){
+      return(length(unique(x))
+      }
