@@ -91,13 +91,8 @@ filetype plugin indent on
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" SConstruct is a python syntax file
-au BufReadPre,BufNewFile SConstruct set filetype=python
-au BufReadPre,BufNewFile SConscript set filetype=python
-
-au BufReadPre,BufNewFile SConstruct-stage3 set filetype=python
-au BufReadPre,BufNewFile SConstruct-stage2 set filetype=python
-au BufReadPre,BufNewFile SConstruct-stage1 set filetype=python
+" Rmd is R markdown file
+au BufReadPre,BufNewFile *.Rmd set filetype=R
 
 " Opens a tab edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>t
