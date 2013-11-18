@@ -11,3 +11,7 @@ options(stringsAsFactors=FALSE)
 lu <- function(x){
       return(length(unique(x)))
       }
+
+li <- function(x, y){
+      return(length(intersect(x,y)))
+      }
