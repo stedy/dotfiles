@@ -29,3 +29,6 @@ ti <- function(x){
       }
 
 trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+
+onezero <- function(x)
+  sample(c(0,1), replace=T, size=x)
