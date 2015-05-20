@@ -150,3 +150,6 @@ set showcmd
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
