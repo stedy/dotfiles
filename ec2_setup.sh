@@ -22,3 +22,6 @@ sudo pip install BeautifulSoup
 sudo apt-get install littler
 
 sudo r -e 'install.packages(c("dplyr","XML", "tm"), repos = "http://cran.case.edu")' 
+
+mkdir ~/.vim
+mkdir ~/.vim/backup
