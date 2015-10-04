@@ -26,5 +26,7 @@ sudo r -e 'install.packages(c("dplyr","XML", "tm"), repos = "http://cran.case.ed
 wget https://download2.rstudio.org/rstudio-server-0.99.484-amd64.deb
 sudo gdebi rstudio-server-0.99.484-amd64.deb
 
+#Utils
 mkdir ~/.vim
 mkdir ~/.vim/backup
+sudo apt-get install -y -qq s3cmd htop
