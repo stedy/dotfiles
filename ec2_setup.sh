@@ -20,6 +20,10 @@ sudo pip install BeautifulSoup
 #R dependent installs
 sudo apt-get install -y -qq r-base r-base-dev
 sudo apt-get install littler
+sudo apt-get install openjdk-7-*
+sudo R CMD javareconf
+sudo apt-get install libcurl4-openssl-dev
+
 
 sudo r -e 'install.packages(c("dplyr","XML", "tm"), repos = "http://cran.case.edu")'
 
