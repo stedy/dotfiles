@@ -6,7 +6,7 @@ sudo apt-key add cran.asc
 sudo rm cran.asc
 
 sudo apt-get update -qq
-sudo apt-get install -y -qq ubuntu-dev-tools gdebi-core libapparmor1 psmisc libtool autoconf automake uuid-dev git octave
+sudo apt-get install -y -qq ubuntu-dev-tools gdebi-core libapparmor1 psmisc libtool autoconf automake uuid-dev octave
 
 #python dependent installs
 sudo apt-get install -y -qq python-dev python-scipy python-numpy python-matplotlib python-pandas python-nose python-sympy python-scikits.learn
