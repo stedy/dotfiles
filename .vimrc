@@ -153,3 +153,6 @@ endif
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" handlebars is HTML syntax
+au BufReadPre,BufNewFile *.handlebars set filetype=html
