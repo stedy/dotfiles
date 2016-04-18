@@ -9,10 +9,13 @@ sudo apt-get update -qq
 sudo apt-get install -y -qq ubuntu-dev-tools gdebi-core libapparmor1 psmisc libtool autoconf automake uuid-dev octave
 
 #python dependent installs
-sudo apt-get install -y -qq python-dev python-scipy python-numpy python-matplotlib python-pandas python-nose python-sympy python-scikits.learn
+sudo apt-get install -y -qq python-dev python-scipy python-numpy python-matplotlib python-pandas python-nose python-sympy 
 sudo apt-get install libxml2-dev libxslt1-dev
 sudo apt-get install -qq python-pip
 sudo pip install BeautifulSoup
+sudo pip install -U scikit-learn
+sudo pip install pandas
+sudo pip install seaborn
 
 #R dependent installs
 sudo apt-get install -y -qq r-base r-base-dev
