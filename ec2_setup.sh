@@ -10,11 +10,8 @@ sudo apt-get install -y -qq ubuntu-dev-tools gdebi-core libapparmor1 psmisc libt
 
 #python dependent installs
 sudo apt-get install -y -qq python-dev python-scipy python-numpy python-matplotlib python-pandas python-nose python-sympy python-scikits.learn
-
 sudo apt-get install libxml2-dev libxslt1-dev
-
 sudo apt-get install -qq python-pip
-
 sudo pip install BeautifulSoup
 
 #R dependent installs
@@ -24,13 +21,13 @@ sudo apt-get install openjdk-7-*
 sudo R CMD javareconf
 sudo apt-get install libcurl4-openssl-dev
 
-
 sudo r -e 'install.packages(c("dplyr","XML", "tm"), repos = "http://cran.case.edu")'
 
-wget https://download2.rstudio.org/rstudio-server-0.99.484-amd64.deb
-sudo gdebi rstudio-server-0.99.484-amd64.deb
-
 #Utils
+sudo apt-get install -y -qq s3cmd htop
+
+#vim specific
+su ubuntu
+cp .vimrc ..
 mkdir ~/.vim
 mkdir ~/.vim/backup
-sudo apt-get install -y -qq s3cmd htop
