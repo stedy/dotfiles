@@ -6,9 +6,10 @@ sudo apt-key add cran.asc
 sudo rm cran.asc
 
 sudo add-apt-repository -y ppa:ubuntugis/ppa
-sudo apt-get update -qq & sudo apt-get upgrade -y -qq
+sudo add-apt-repository -y ppa:opencpu/jq
+sudo apt-get update -qq && sudo apt-get upgrade -y -qq
 
-sudo apt-get install gdal-bin libgdal1-dev libgdal-dev libgeos-c1 libproj-dev
+sudo apt-get install gdal-bin libgdal1-dev libgdal-dev libgeos-c1v5 libproj-dev libssl-dev libcurl4-openssl-dev libudunits2-dev libprotobuf-dev libjq-dev libv8-3.14-dev protobuf-compiler
 
 #R dependent installs
 sudo apt-get install -y -qq r-base r-base-dev
@@ -20,7 +21,7 @@ sudo r -e 'install.packages(c("dplyr","rgdal", "sp", "rgeos", "geojsonio", "leaf
 sudo apt-get install -y -qq s3cmd htop
 
 #install pandoc
-sudo apt-get install pandoc
+sudo apt-get install -y pandoc
 
 #vim specific
 su ubuntu
