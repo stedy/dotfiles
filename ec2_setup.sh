@@ -1,30 +1,22 @@
 #start with GPG key for latest R
-echo "deb http://lib.stat.cmu.edu/R/CRAN/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
-gpg --keyserver pgp.mit.edu --recv-key 51716619E084DAB9
-gpg -a --export 51716619E084DAB9 > cran.asc
-sudo apt-key add cran.asc
-sudo rm cran.asc
-
-sudo apt-get update -qq
-sudo apt-get install -y -qq ubuntu-dev-tools gdebi-core libapparmor1 psmisc libtool autoconf automake uuid-dev
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+sudo apt install --no-install-recommends r-base
 
 #python dependent installs
-sudo apt-get install -y -qq python-dev python-scipy python-numpy python-matplotlib python-pandas python-nose python-sympy
-sudo apt-get install libxml2-dev libxslt1-dev
-sudo apt-get install -qq python-pip
-sudo pip install BeautifulSoup
+sudo apt install -y -qq python-dev python-scipy python-numpy python-matplotlib python-pandas python-nose python-sympy
+sudo apt install libxml2-dev libxslt1-dev
+sudo apt install -qq python-pip
 sudo pip install -U scikit-learn
-sudo pip install pandas
-sudo pip install seaborn
 
 #R dependent installs
-sudo apt-get install -y -qq r-base r-base-dev
-sudo apt-get install littler
-sudo apt-get install openjdk-8-*
+sudo apt install -y -qq r-base
+sudo apt install littler
+sudo apt install openjdk-8-*
 sudo R CMD javareconf
 sudo apt-get install libcurl4-openssl-dev
 
-sudo r -e 'install.packages(c("dplyr","XML", "tm"), repos = "http://cran.case.edu")'
+sudo r -e 'install.packages(c("dplyr","ggplot2"), repos = "https://cran.case.edu")'
 
 #Utils
 sudo apt-get install -y -qq s3cmd htop
